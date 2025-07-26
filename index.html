@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free fire top up - Free Fire Diamonds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            font-size: 0.75rem; /* Further reduced base font size (12px) */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Light track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; /* Darker thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Even darker on hover */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white shadow-lg py-2 px-4 rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <h1 class="text-xl font-extrabold tracking-tight mb-0 md:mb-0">
+                ZIAD TOP UP
+            </h1>
+            <nav class="flex items-center space-x-3">
+                <ul class="flex space-x-3 text-sm">
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300 ease-in-out">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300 ease-in-out">Packages</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300 ease-in-out">How to Buy</a></li>
+                    <li><a href="#" class="hover:text-purple-200 transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+                <div class="flex space-x-2 ml-3">
+                    <a href="signup.html" class="bg-white text-purple-700 px-2 py-1 rounded-full font-semibold hover:bg-gray-100 transition duration-300 ease-in-out shadow-md text-xs">Sign Up</a>
+                    <a href="login.html" class="border border-white text-white px-2 py-1 rounded-full font-semibold hover:bg-white hover:text-purple-700 transition duration-300 ease-in-out shadow-md text-xs">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-6">
+        <section class="text-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Top Up Free Fire Diamonds Instantly!</h2>
+            <p class="text-sm text-gray-600 max-w-lg mx-auto">
+                <span class="font-bold text-red-600">Get the best deals on Free Fire diamonds.</span>
+            </p>
+        </section>
+
+        <section class="mb-5 text-left">
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Need help? Chat with us!</h3>
+            <div class="flex flex-wrap gap-2">
+                <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" class="flex items-center bg-green-500 text-white px-4 py-1.5 rounded-full font-semibold shadow-md hover:bg-green-600 transition duration-300 ease-in-out text-xs">
+                    <img src="images/qq.jpg" alt="WhatsApp Logo" class="w-4 h-4 mr-1.5"> WhatsApp Chat
+                </a>
+                <a href="https://m.me/YOUR_FACEBOOK_PAGE_ID" target="_blank" class="flex items-center bg-blue-600 text-white px-4 py-1.5 rounded-full font-semibold shadow-md hover:bg-blue-700 transition duration-300 ease-in-out text-xs">
+                    <img src="images/uu.jpg" alt="Messenger Logo" class="w-4 h-4 mr-1.5"> Messenger Chat
+                </a>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-8 border border-gray-200">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">FREE FIRE</h2>
+            <section id="free-fire-items-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <!-- Free Fire items will be dynamically loaded here by JavaScript -->
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 px-4 rounded-t-xl mt-8">
+        <div class="container mx-auto text-center text-xs">
+            <p>&copy; 2025 BD TOP UP. All rights reserved. Free Fire is a registered trademark of Garena International.</p>
+            <div class="flex justify-center space-x-2 mt-2">
+                <a href="#" class="hover:text-gray-400 transition duration-300 ease-in-out">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400 transition duration-300 ease-in-out">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Array of Free Fire items
+        const freeFireItems = [
+            {
+                id: 'bd-server',
+                imageSrc: 'images/free-fire-bd.jpg',
+                title: 'Free Fire [BD SERVER]',
+                description: 'Top up for Bangladesh server.',
+                linkPage: 'free-fire-bd-details.html' // Link to the specific details page
+            },
+            {
+                id: 'membership',
+                imageSrc: 'images/rr.jpg',
+                title: 'Free Fire Membership',
+                description: 'Access exclusive benefits.',
+                linkPage: 'membership-details.html' // Example: Link to a new membership details page
+            },
+            {
+                id: 'level-up-pass',
+                imageSrc: 'images/tt.jpg',
+                title: 'Free Fire Level Up Pass BD',
+                description: 'Level up faster in BD server.',
+                linkPage: 'level-up-pass-details.html' // Example: Link to a new level up pass details page
+            },
+            {
+                id: 'weekly-lite',
+                imageSrc: 'images/Free-Fire-Weekly-Lite-BD.jpg',
+                title: 'Weekly Lite Membership',
+                description: 'Lite benefits for a week.',
+                linkPage: 'weekly-lite-details.html' // Example: Link to a new weekly lite details page
+            },
+            {
+                id: 'airdrop',
+                imageSrc: 'images/download.jpg',
+                title: 'Free Fire Airdrop',
+                description: 'Get special in-game airdrops.',
+                linkPage: 'airdrop-details.html' // Example: Link to a new airdrop details page
+            },
+            {
+                id: 'evo-access',
+                imageSrc: 'images/ww.jpg',
+                title: 'Free Fire Evo Access',
+                description: 'Unlock Evo gun skins.',
+                linkPage: 'evo-access-details.html' // Example: Link to a new evo access details page
+            }
+            // Add more items here following the same structure
+            /*
+            {
+                id: 'new-item',
+                imageSrc: 'images/new-item-image.jpg',
+                title: 'New Awesome Item',
+                description: 'A brief description of the new item.',
+                linkPage: 'new-item-details.html' // Create this HTML file
+            }
+            */
+        ];
+
+        // Function to render items
+        function renderFreeFireItems() {
+            const container = document.getElementById('free-fire-items-container');
+            if (!container) return; // Exit if container not found
+
+            container.innerHTML = ''; // Clear existing content
+
+            freeFireItems.forEach(item => {
+                const itemHtml = `
+                    <a href="${item.linkPage}" class="flex flex-col items-center p-2 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <img src="${item.imageSrc}" alt="${item.title}" class="w-20 h-20 rounded-md mb-1.5 object-cover">
+                        <h3 class="text-sm font-bold text-gray-800 text-center">${item.title}</h3>
+                        <p class="text-xs text-gray-600 text-center leading-tight">${item.description}</p>
+                    </a>
+                `;
+                container.innerHTML += itemHtml; // Append the new item HTML
+            });
+        }
+
+        // Call the render function when the page loads
+        document.addEventListener('DOMContentLoaded', renderFreeFireItems);
+    </script>
+</body>
+</html>
